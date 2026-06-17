@@ -1501,7 +1501,8 @@ int ComputeFontScale(const mj::PlatformUIAdapter& platform_ui) {
     fs = 150;
   }
   fs = mju_round(fs * 0.02) * 50;
-  fs = mjMIN(300, mjMAX(100, fs));
+  // default font floor raised to 200% for readability on QHD/high-DPI displays
+  fs = mjMIN(300, mjMAX(200, fs));
 
   return fs;
 }

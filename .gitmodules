@@ -1,0 +1,3 @@
+[submodule ".claude/knowledge"]
+	path = .claude/knowledge
+	url = git@github.com:Vivat-Robotics/vivat-llm-knowledge.git
